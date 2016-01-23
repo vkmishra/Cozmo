@@ -4,13 +4,12 @@ using System.Collections;
 using lazymonster;
 
 public class CarController : MonoBehaviour {
-	public float speed;
-	public Vector3 handling;
-	public float topSpeed;
 	public Canvas GUICrash, FinishLine;
+	public float speed, topSpeed;
 	public Text guiLife, guiScore, guiSpeed;
 	public Image needle;
 	public RectTransform LifePanel;
+	public Vector3 handling;
 	private Rigidbody rb;
 	private int Score, Life, needlePosition;
 	private float LifeBarLength, currentSpeed;

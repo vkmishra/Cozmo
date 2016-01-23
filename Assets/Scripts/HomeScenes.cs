@@ -46,6 +46,10 @@ public class HomeScenes : MonoBehaviour {
 		Application.LoadLevel("L03");
 	}
 
+	public void Level04(){
+		Application.LoadLevel("L04");
+	}
+
 	public void buttonTap(){
 		//btnTap.PlayOneShot(btnTap.clip);
 	}
