@@ -46,14 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CarController.cs" />
      <Compile Include="Assets\Scripts\DataHandling.cs" />
-     <Compile Include="Assets\Scripts\GUIScript.cs" />
+     <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\HomeGUILocks.cs" />
-     <Compile Include="Assets\Scripts\HomeScenes.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\SceneSettings.cs" />
+     <Compile Include="Assets\Scripts\ScenesGUI.cs" />
      <Compile Include="Assets\Scripts\Settings.cs" />
-     <Compile Include="Assets\Scripts\SoundScript.cs" />
-     <Compile Include="Assets\Scripts\UpdateValuesSetting.cs" />
      <Compile Include="Assets\Scripts\planeAnimation.cs" />
      <None Include="Assets\ProjectSettings\ProjectVersion.txt" />
  <Reference Include="UnityEngine.UI">

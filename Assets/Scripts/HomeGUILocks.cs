@@ -19,9 +19,4 @@ public class HomeGUILocks : MonoBehaviour {
 			locks[1].enabled = !dataList[i].unlockCheck();
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
