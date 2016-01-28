@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour {
 	public Sprite mute, snd;
 	public RectTransform LifePanel;
 	public bool IsPause, IsComplete, IsCrashed;
-	public Button myBtn;
+	public Button myBtn, b2, b3;
 	public GameObject plyr;
 	private Configuration cfg;
 	private int Score, Life, needlePosition;
@@ -24,8 +24,18 @@ public class GameController : MonoBehaviour {
 		cfg = Settings.GetSettings();
 		btn.volume = cfg.getUIVolume();
 		musc.volume = cfg.getMusicVolume();
-		if(cfg.isSoundEnabled())
+		if(cfg.isSoundEnabled()){
 			musc.Play();
+			myBtn.image.sprite = snd;
+			b2.image.sprite = snd;
+			b3.image.sprite = snd;
+		}
+		else{
+			myBtn.image.sprite = mute;
+			b2.image.sprite = mute;
+			b3.image.sprite = mute;
+		}
+
 		GUICrash.enabled = FinishLine.enabled = GUIPause.enabled = false;
 		Life = 50;
 		Score = 0;
@@ -100,9 +110,16 @@ public class GameController : MonoBehaviour {
 		//myBtn.image.sprite = (cfg.isSoundEnabled()) ? snd : mute;
 		if(cfg.isSoundEnabled()){
 			myBtn.image.sprite = snd;
+			b2.image.sprite = snd;
+			b3.image.sprite = snd;
+			if(!IsPause)
+				musc.Play();
 		}
 		else{
 			myBtn.image.sprite = mute;
+			b2.image.sprite = mute;
+			b3.image.sprite = mute;
+			musc.Pause();
 		}
 	}
 
