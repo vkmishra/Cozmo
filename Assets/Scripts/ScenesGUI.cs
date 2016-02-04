@@ -17,6 +17,7 @@ public class ScenesGUI : MonoBehaviour {
 		btnTap.volume = cfg.getUIVolume();
 		if(lvlStart != null)
 			lvlStart.volume = cfg.getMusicVolume();
+		//Input.simulateMouseWithTouches = true;
 	}
 
 	//Button sound
